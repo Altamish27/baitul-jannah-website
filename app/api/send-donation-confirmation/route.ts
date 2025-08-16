@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     // Admin contact info
     const adminEmail = "nurjannahcendikia@gmail.com"
-    const adminWhatsApp = "082217184920"
+    const adminWhatsApp = "+6281258403467"
 
     // Send thank you email from admin to donor
     const emailResult = await sendThankYouEmail(data, adminEmail)
@@ -117,7 +117,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
             <h3 style="color: #d97706; margin: 0 0 15px 0; font-size: 18px;">📝 Langkah Selanjutnya:</h3>
             <ol style="color: #374151; line-height: 1.6; margin: 0; padding-left: 20px;">
               <li style="margin-bottom: 8px;">Silakan lakukan transfer sesuai metode pembayaran yang Anda pilih</li>
-              <li style="margin-bottom: 8px;">Kirim bukti transfer ke WhatsApp kami: <strong>082217184920</strong></li>
+              <li style="margin-bottom: 8px;">Kirim bukti transfer ke WhatsApp kami: <strong>+6281258403467</strong></li>
               <li style="margin-bottom: 8px;">Tim kami akan mengkonfirmasi donasi Anda dalam 1x24 jam</li>
               <li>Anda akan menerima sertifikat donasi digital sebagai tanda terima kasih</li>
             </ol>
@@ -127,7 +127,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
           <div style="background: #eff6ff; border: 1px solid #93c5fd; border-radius: 8px; padding: 20px; margin: 25px 0;">
             <h3 style="color: #1d4ed8; margin: 0 0 15px 0; font-size: 18px;">📞 Hubungi Kami:</h3>
             <p style="color: #374151; margin: 5px 0;">
-              <strong>WhatsApp:</strong> 082217184920<br>
+              <strong>WhatsApp:</strong> +6281258403467<br>
               <strong>Email:</strong> nurjannahcendikia@gmail.com<br>
               <strong>Alamat:</strong> Jl. Pesantren No. 123, Desa Sukamaju, Kecamatan Cibadak, Kabupaten Sukabumi, Jawa Barat
             </p>
@@ -156,7 +156,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
         <div style="text-align: center; margin-top: 20px;">
           <p style="color: #9ca3af; font-size: 12px; margin: 0;">
             Email ini dikirim otomatis dari sistem donasi Pesantren Baitul Jannah<br>
-            Jika ada pertanyaan, silakan hubungi kami di WhatsApp: 082217184920
+            Jika ada pertanyaan, silakan hubungi kami di WhatsApp: +6281258403467
           </p>
         </div>
       </div>
@@ -234,7 +234,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
             <h3 style="color: #d97706; margin: 0 0 15px 0; font-size: 18px;">📝 Next Steps:</h3>
             <ol style="color: #374151; line-height: 1.6; margin: 0; padding-left: 20px;">
               <li style="margin-bottom: 8px;">Please make the transfer according to your selected payment method</li>
-              <li style="margin-bottom: 8px;">Send proof of transfer to our WhatsApp: <strong>082217184920</strong></li>
+              <li style="margin-bottom: 8px;">Send proof of transfer to our WhatsApp: <strong>+6281258403467</strong></li>
               <li style="margin-bottom: 8px;">Our team will confirm your donation within 24 hours</li>
               <li>You will receive a digital donation certificate as our appreciation</li>
             </ol>
@@ -244,7 +244,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
           <div style="background: #eff6ff; border: 1px solid #93c5fd; border-radius: 8px; padding: 20px; margin: 25px 0;">
             <h3 style="color: #1d4ed8; margin: 0 0 15px 0; font-size: 18px;">📞 Contact Us:</h3>
             <p style="color: #374151; margin: 5px 0;">
-              <strong>WhatsApp:</strong> 082217184920<br>
+              <strong>WhatsApp:</strong> +6281258403467<br>
               <strong>Email:</strong> nurjannahcendikia@gmail.com<br>
               <strong>Address:</strong> Jl. Pesantren No. 123, Desa Sukamaju, Kecamatan Cibadak, Kabupaten Sukabumi, West Java
             </p>
@@ -273,7 +273,7 @@ async function sendThankYouEmail(data: DonationData, fromEmail: string) {
         <div style="text-align: center; margin-top: 20px;">
           <p style="color: #9ca3af; font-size: 12px; margin: 0;">
             This email is sent automatically from Baitul Jannah Islamic Boarding School donation system<br>
-            If you have any questions, please contact us on WhatsApp: 082217184920
+            If you have any questions, please contact us on WhatsApp: +6281258403467
           </p>
         </div>
       </div>

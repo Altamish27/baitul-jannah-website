@@ -459,7 +459,7 @@ export default function DonasiPage() {
                       <MessageCircle className="h-5 w-5" />
                       <div>
                         <p className="font-medium">{language === "id" ? "WhatsApp Follow-up" : "WhatsApp Follow-up"}</p>
-                        <p className="text-emerald-100 text-sm">082217184920</p>
+                        <p className="text-emerald-100 text-sm">+6281258403467</p>
                       </div>
                     </div>
                   </div>

@@ -141,7 +141,7 @@ export default function FitrahOilPage() {
   const isTestimonialsInView = useInView(testimonialsRef, { once: true, amount: 0.3 })
 
   const handleOrderWhatsApp = () => {
-    const phoneNumber = "+6282217184920"
+    const phoneNumber = "+6281258403467"
     const message = encodeURIComponent(
       "Halo, saya tertarik dengan Fitrah Herbal Oil seharga Rp 75.000. Apakah masih tersedia? Saya ingin memesan."
     )
@@ -519,7 +519,7 @@ export default function FitrahOilPage() {
                   <Phone className="h-6 w-6 text-emerald-600" />
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">WhatsApp</p>
-                    <p className="text-gray-600 dark:text-gray-300">082217184920</p>
+                    <p className="text-gray-600 dark:text-gray-300">+6281258403467</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center gap-3">
