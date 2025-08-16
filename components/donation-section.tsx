@@ -48,7 +48,7 @@ const paymentMethods = [
     name: "GoPay",
     type: "ewallet",
     icon: <Smartphone className="h-5 w-5" />,
-    account: "081234567890",
+    account: "+6281258403467",
     accountName: "Yayasan Baitul Jannah",
   },
   {
@@ -56,7 +56,7 @@ const paymentMethods = [
     name: "DANA",
     type: "ewallet",
     icon: <Smartphone className="h-5 w-5" />,
-    account: "081234567890",
+    account: "+6281258403467",
     accountName: "Yayasan Baitul Jannah",
   },
   {
@@ -64,7 +64,7 @@ const paymentMethods = [
     name: "OVO",
     type: "ewallet",
     icon: <Smartphone className="h-5 w-5" />,
-    account: "081234567890",
+    account: "+6281258403467",
     accountName: "Yayasan Baitul Jannah",
   },
 ]
