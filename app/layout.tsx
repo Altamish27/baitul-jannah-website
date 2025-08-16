@@ -30,12 +30,25 @@ export const metadata: Metadata = {
     "Pesantren Baitul Jannah adalah pesantren gratis yang didedikasikan untuk anak yatim piatu, menyediakan pendidikan berkualitas dan lingkungan yang mendukung dengan nilai-nilai Islam yang kuat.",
   keywords: "pesantren, yatim piatu, pendidikan Islam, gratis, Baitul Jannah",
   authors: [{ name: "Pesantren Baitul Jannah" }],
+  icons: {
+    icon: '/LogoPondokPesantren.jpg',
+    shortcut: '/LogoPondokPesantren.jpg',
+    apple: '/LogoPondokPesantren.jpg',
+  },
   openGraph: {
     title: "Pesantren Baitul Jannah - Pesantren Gratis untuk Yatim Piatu",
     description: "Membangun masa depan cerah untuk anak-anak yatim dengan pendidikan berkualitas dan nilai-nilai Islam",
     type: "website",
+    images: [
+      {
+        url: '/LogoPondokPesantren.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Logo Pesantren Baitul Jannah',
+      }
+    ],
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
