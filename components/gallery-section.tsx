@@ -5,79 +5,69 @@ import { motion, AnimatePresence, useInView } from "framer-motion"
 import Image from "next/image"
 import { X } from "lucide-react"
 
-const categories = ["Semua", "Kegiatan Belajar", "Ekstrakurikuler", "Asrama", "Acara"]
+const categories = ["Semua", "Kegiatan Belajar", "Acara"]
 
 const galleryItems = [
+  // Kegiatan Belajar
   {
     id: 1,
-    src: "/KegiatanMengaji.jpg",
-    alt: "Kegiatan Belajar di Kelas",
+    src: "/KegiatanBelajar/KegiatanMengaji.jpg",
+    alt: "",
     category: "Kegiatan Belajar",
   },
   {
     id: 2,
-    src: "/AcaraSantri1.jpg",
-    alt: "Latihan Hadroh",
-    category: "Ekstrakurikuler",
+    src: "/KegiatanBelajar/NgajiBareng1.jpg",
+    alt: "",
+    category: "Kegiatan Belajar",
   },
   {
     id: 3,
-    src: "/MakanBarengPotrait.jpg",
-    alt: "Kegiatan di Asrama",
-    category: "Asrama",
+    src: "/KegiatanBelajar/SantriWatiNgajiBareng.jpg",
+    alt: "",
+    category: "Kegiatan Belajar",
   },
   {
     id: 4,
-    src: "/SantriBersamaRidwanKamil.jpg",
-    alt: "Wisuda Santri",
-    category: "Acara",
+    src: "/KegiatanBelajar/SantriWatiNgajiBareng2.jpg",
+    alt: "",
+    category: "Kegiatan Belajar",
   },
   {
     id: 5,
-    src: "/NgajiBareng1.jpg",
-    alt: "Belajar Komputer",
+    src: "/KegiatanBelajar/FotoSantri1.jpg",
+    alt: "",
     category: "Kegiatan Belajar",
   },
   {
     id: 6,
-    src: "/FotoSantri1.jpg",
-    alt: "Olahraga Bersama",
-    category: "Ekstrakurikuler",
+    src: "/KegiatanBelajar/SantriWati1.jpg",
+    alt: "",
+    category: "Kegiatan Belajar",
   },
+  // Acara
   {
     id: 7,
-    src: "/SantriWatiNgajiBareng.jpg",
-    alt: "Makan Bersama",
-    category: "Asrama",
+    src: "/Acara/AcaraSantri1.jpg",
+    alt: "",
+    category: "Acara",
   },
   {
     id: 8,
-    src: "/UstadzahBareng1.jpg",
-    alt: "Peringatan Hari Besar",
+    src: "/Acara/MakanBarengPotrait.jpg",
+    alt: "",
     category: "Acara",
   },
   {
     id: 9,
-    src: "/SantriWatiNgajiBareng2.jpg",
-    alt: "Kegiatan Santri Wati",
-    category: "Kegiatan Belajar",
+    src: "/Acara/SantriBersamaRidwanKamil.jpg",
+    alt: "",
+    category: "Acara",
   },
   {
     id: 10,
-    src: "/SantriWati1.jpg",
-    alt: "Santri Wati",
-    category: "Asrama",
-  },
-  {
-    id: 11,
-    src: "/PesantrenDariDepan2.jpg",
-    alt: "Gedung Pesantren",
-    category: "Asrama",
-  },
-  {
-    id: 12,
-    src: "/MasjidDariDalem.jpg",
-    alt: "Masjid Pesantren",
+    src: "/Acara/UstadzahBareng1.jpg",
+    alt: "",
     category: "Acara",
   },
 ]
@@ -168,15 +158,10 @@ export default function GallerySection() {
               <div className="relative h-64 w-full">
                 <Image
                   src={item.src}
-                  alt={item.alt}
+                  alt={`Foto ${item.category}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-medium text-center px-4">
-                    {item.alt}
-                  </span>
-                </div>
               </div>
             </motion.div>
           ))}
@@ -202,7 +187,7 @@ export default function GallerySection() {
                 <div className="relative h-full w-full">
                   <Image
                     src={selectedImage.src}
-                    alt={selectedImage.alt}
+                    alt={`Foto ${selectedImage.category}`}
                     fill
                     className="object-contain"
                   />
@@ -213,9 +198,6 @@ export default function GallerySection() {
                 >
                   <X className="h-6 w-6" />
                 </button>
-                <div className="absolute bottom-4 left-0 right-0 text-center">
-                  <span className="bg-black/60 text-white px-4 py-2 rounded-lg">{selectedImage.alt}</span>
-                </div>
               </motion.div>
             </motion.div>
           )}

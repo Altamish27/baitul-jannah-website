@@ -21,7 +21,7 @@ export default function Header() {
     { name: t("home"), href: "/" },
     { name: t("about"), href: "/tentang" },
     { name: t("programs"), href: "/program" },
-    { name: "Usaha", href: "/usaha" },
+    { name: "Fitrah Oil", href: "/usaha" },
   ]
 
   useEffect(() => {

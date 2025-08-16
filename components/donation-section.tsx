@@ -303,36 +303,7 @@ export default function DonationSection() {
                 </p>
               </div>
 
-              <div className="mt-8">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-4">Bagikan:</h4>
-                <div className="flex space-x-4">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/50"
-                  >
-                    <Facebook className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="sr-only">Share on Facebook</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/50"
-                  >
-                    <Twitter className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="sr-only">Share on Twitter</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/50"
-                  >
-                    <Instagram className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="sr-only">Share on Instagram</span>
-                  </Button>
-                </div>
-              </div>
-            </div>
+                          </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
               <h3 className="font-playfair text-2xl font-bold text-gray-900 dark:text-white mb-6">Mengapa Donasi?</h3>

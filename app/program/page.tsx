@@ -11,16 +11,16 @@ const programs = [
     icon: <Heart className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
     title: "Pesantren Yatim Dhuafa & Broken Home",
     description: "Pendidikan gratis untuk anak yatim, dhuafa, dan keluarga broken home dengan lingkungan yang mendukung.",
-    image: "/KegiatanMengaji.jpg",
+    image: "/KegiatanBelajar/NgajiBareng1.jpg",
     features: ["Pendidikan Gratis", "Asrama", "Makan 3x Sehari", "Bimbingan Rohani"],
     duration: "6-12 Tahun",
-    capacity: "150 Santri",
+    
   },
   {
     icon: <Users className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
     title: "Panti Asuhan / Lembaga Kesejahteraan Sosial Anak",
     description: "Fasilitas pengasuhan dan pembinaan anak-anak terlantar dengan pendampingan profesional.",
-    image: "/MakanBarengPotrait.jpg",
+    image: "PengajarBersamaSantri.jpg",
     features: ["Pengasuhan 24 Jam", "Pendidikan", "Kesehatan", "Konseling"],
     duration: "Hingga Mandiri",
     capacity: "100 Anak",
@@ -30,9 +30,9 @@ const programs = [
     title: "Masjid Traveller Ramah Musafir",
     description: "Masjid yang menyediakan fasilitas gratis untuk musafir: ngopi, makan, dan nginap.",
     image: "/MasjidDariDalem.jpg",
-    features: ["Ngopi Gratis", "Makan Gratis", "Nginap Gratis", "Ruang Istirahat"],
+    features: ["Ngopi ",  "Nginap", "Ruang Istirahat"],
     duration: "24 Jam",
-    capacity: "50 Musafir",
+ 
   },
   {
     icon: <Activity className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
@@ -41,7 +41,7 @@ const programs = [
     image: "/Alfaris.jpg",
     features: ["Terapi Fisik", "Terapi Mental", "Pelatihan Skill", "Rehabilitasi"],
     duration: "Sesuai Kebutuhan",
-    capacity: "30 Pasien/Hari",
+   
   },
 ]
 
@@ -137,46 +137,7 @@ export default function ProgramPage() {
           </div>
         </section>
 
-        {/* Achievements Section */}
-        <section className="py-20 bg-gray-50 dark:bg-gray-900/50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-16"
-            >
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Prestasi Terbaru
-              </h2>
-              <div className="w-20 h-1 bg-amber-400 mx-auto"></div>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {achievements.map((achievement, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-emerald-100 dark:bg-emerald-900 rounded-full flex items-center justify-center text-emerald-600 dark:text-emerald-400">
-                      {achievement.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{achievement.title}</h3>
-                      <span className="text-sm text-emerald-600 dark:text-emerald-400 font-medium">
-                        {achievement.year}
-                      </span>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+      
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white">

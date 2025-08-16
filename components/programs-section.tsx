@@ -18,13 +18,13 @@ export default function ProgramsSection() {
       icon: <Heart className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
       title: t("pesantrenYatim"),
       description: t("pesantrenYatimDesc"),
-      image: "/KegiatanMengaji.jpg",
+      image: "KegiatanBelajar/KegiatanMengaji.jpg",
     },
     {
       icon: <Users className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
       title: t("pantiAsuhan"),
       description: t("pantiAsuhanDesc"),
-      image: "/MakanBarengPotrait.jpg",
+      image: "/Acara/MakanBarengPotrait.jpg",
     },
     {
       icon: <MapPin className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />,
